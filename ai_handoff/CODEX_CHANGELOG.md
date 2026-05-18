@@ -1,5 +1,28 @@
 # Codex Changelog
 
+## 2026-05-18 - Add account-switch handoff
+
+Changed files:
+
+- `ai_handoff/ACCOUNT_SWITCH_HANDOFF.md`
+- `ai_handoff/README_AI_HANDOFF.md`
+- `ai_handoff/LATEST_STATUS.md`
+- `ai_handoff/CODEX_CHANGELOG.md`
+- `ai_handoff/NEXT_PLAN.md`
+- `ai_handoff/REPORTS_INDEX.json`
+- `ai_handoff/ARTIFACT_MANIFEST.json`
+- `scripts/validate_ai_handoff.py`
+
+Behavior/documentation changes:
+
+- Added a dedicated handoff for a new Codex account.
+- Expanded the account-switch handoff with project state, decisions, mistakes to avoid, completed/unfinished Codex work, next steps, and core reward/data/CQL/coverage_v0/controlled_v1 logic.
+- Recorded that GitHub `main` is pushed at `2d1e9ad`, but actual project source code remains local and untracked.
+- Recorded local chat provenance paths as optional only, not as the stable project handoff.
+- Added `ACCOUNT_SWITCH_HANDOFF.md` to the validator's required file list and marker checks.
+
+No MATLAB rerun, CQL training, experimental data generation, large-file upload, or raw data upload was performed.
+
 ## 2026-05-18 - Prepare first safe GitHub publish
 
 Changed files:

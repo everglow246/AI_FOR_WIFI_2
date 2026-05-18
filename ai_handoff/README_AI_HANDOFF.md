@@ -4,15 +4,17 @@ This directory is the GitHub-facing project handoff for external reviewers and C
 
 ## Read Order
 
-1. `LATEST_STATUS.md` for the current truth boundary.
-2. `CURRENT_DECISIONS.md` for Action3P, state, reward, and data rules.
-3. `KNOWN_ISSUES.md` for blockers and non-claims.
-4. `NEXT_PLAN.md` for the next safe work sequence.
-5. `REPORTS_INDEX.json`, `RUNS_INDEX.json`, and `ARTIFACT_MANIFEST.json` for machine-readable pointers.
+1. `ACCOUNT_SWITCH_HANDOFF.md` if a new Codex account is taking over; it includes a one-page state, decisions, mistakes-to-avoid, completed/unfinished tasks, next step, and core logic summary.
+2. `LATEST_STATUS.md` for the current truth boundary.
+3. `CURRENT_DECISIONS.md` for Action3P, state, reward, and data rules.
+4. `KNOWN_ISSUES.md` for blockers and non-claims.
+5. `NEXT_PLAN.md` for the next safe work sequence.
+6. `REPORTS_INDEX.json`, `RUNS_INDEX.json`, and `ARTIFACT_MANIFEST.json` for machine-readable pointers.
 
 ## Current Headline
 
 - Current project: `D:\AI_for_wifi\AI_FOR_WIFI_2`
+- GitHub repo: `https://github.com/everglow246/AI_FOR_WIFI_2`
 - Current algorithm direction: Action3P CQL / MDP-lite offline RL diagnostics.
 - Latest completed run: `reports/runs/run_001_coverage_v0_action3p_reward_fullstep/`
 - Latest completed run status: historical calibration, reward/candidate diagnostic, and regression asset only.

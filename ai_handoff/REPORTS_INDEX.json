@@ -1,10 +1,24 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-17T23:49:36+08:00",
+  "generated_at": "2026-05-18T13:35:25+08:00",
   "project": "AI_FOR_WIFI_2 / Action3P",
   "github_note": "Current .gitignore ignores reports/* by default. These paths are local/generated unless explicitly unignored later. Run scripts/validate_ai_handoff.py before publishing.",
   "latest_run": "run_001_coverage_v0_action3p_reward_fullstep",
   "reports": [
+    {
+      "path": "ai_handoff/ACCOUNT_SWITCH_HANDOFF.md",
+      "type": "handoff_document",
+      "purpose": "Account-switch entry point for a new Codex account.",
+      "status": "exists_local",
+      "github_upload_status": "uploaded_to_main",
+      "key_facts": {
+        "local_chat_logs_are_optional": true,
+        "source_code_not_fully_published_yet": true,
+        "start_here_for_new_codex": true,
+        "includes_project_state_decisions_mistakes_tasks_next_steps": true,
+        "includes_reward_data_cql_coverage_controlled_logic": true
+      }
+    },
     {
       "path": "reports/runs/run_001_coverage_v0_action3p_reward_fullstep/run_manifest.json",
       "type": "run_manifest",

@@ -16,6 +16,7 @@ MISSING = "\u672a\u751f\u6210"
 
 REQUIRED_HANDOFF_FILES = [
     "README_AI_HANDOFF.md",
+    "ACCOUNT_SWITCH_HANDOFF.md",
     "LATEST_STATUS.md",
     "CODEX_CHANGELOG.md",
     "CURRENT_DECISIONS.md",
@@ -202,6 +203,7 @@ def check_latest_fields(
         passes.append(f"latest report index field is present for run: {reports_index['latest_run']}")
 
     required_text_markers = {
+        "ACCOUNT_SWITCH_HANDOFF.md": ["Can A New Codex Take Over?", "Start Here", "Do Not Do"],
         "LATEST_STATUS.md": ["Latest Completed Run", "Latest Report Pointers", "Safe To Proceed?"],
         "KNOWN_ISSUES.md": ["Current Blockers", "Explicit Non-Claims"],
         "NEXT_PLAN.md": ["Immediate Safe Work", "Decision Gates", "Do Not Do Yet"],

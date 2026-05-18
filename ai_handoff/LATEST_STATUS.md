@@ -1,17 +1,19 @@
 # Latest Status
 
-Generated: 2026-05-18T12:41:41+08:00
+Generated: 2026-05-18T13:35:25+08:00
 
 ## Current State
 
 - GitHub handoff files were prepared for a first safe GitHub commit.
 - GitHub connector login observed in this session: `everglow246`.
-- Target GitHub repository exists: `everglow246/AI_FOR_WIFI_2`, default branch `main`, currently empty at inspection time.
-- Local repository state before first publish: no commits yet on `master`; no `origin` remote was configured.
+- Target GitHub repository exists: `everglow246/AI_FOR_WIFI_2`, default branch `main`.
+- GitHub `main` was pushed successfully and contains the first safe handoff commit plus the preserved remote README.
+- Current local and remote handoff commit: `2d1e9ad`.
 - Current source tree contains Action3P Python, MATLAB, scripts, validators, tests, and decision documents.
 - Current generated report/data layout uses `reports/runs/`, `reports/decisions/`, and `reports/archive/`.
 - `scripts/validate_ai_handoff.py` now exists as a lightweight pre-push validator for handoff completeness and path integrity.
-- Latest handoff validation before first publish: PASS with `D:\AI_for_wifi\.venvs\wifi_phase3\Scripts\python.exe scripts\validate_ai_handoff.py`.
+- Latest handoff validation before account-switch update: PASS with `D:\AI_for_wifi\.venvs\wifi_phase3\Scripts\python.exe scripts\validate_ai_handoff.py`.
+- Account-switch handoff exists at `ai_handoff/ACCOUNT_SWITCH_HANDOFF.md`.
 
 ## Latest Completed Run
 
@@ -79,4 +81,6 @@ coverage_v0 must not be used for:
 
 Not safe for large-scale CQL training yet. Next blockers are controlled_v1 MATLAB rerun, controlled geometry validation, seed metadata validation, and a reproducible CQL smoke that saves the missing replay artifacts.
 
-For GitHub publishing, this session is preparing a first commit containing only `.gitignore`, `AGENTS.md`, `ai_handoff/*`, and `scripts/validate_ai_handoff.py`. No MATLAB rerun, CQL training, new experiment data generation, or large-file upload is part of this publish step.
+For GitHub publishing, the first safe handoff commit was pushed. Future source publication still needs a separate whitelist review. No MATLAB rerun, CQL training, new experiment data generation, or large-file upload is part of the account-switch handoff step.
+
+For account switching, a new Codex should start from `ai_handoff/ACCOUNT_SWITCH_HANDOFF.md`. It should not rely on old local chat logs as the primary project state.

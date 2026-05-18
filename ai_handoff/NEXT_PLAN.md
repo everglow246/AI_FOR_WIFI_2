@@ -2,10 +2,10 @@
 
 ## Immediate Safe Work
 
-1. Finish the first GitHub publish with only `.gitignore`, `AGENTS.md`, `ai_handoff/*`, and `scripts/validate_ai_handoff.py`.
-2. Confirm `main` is pushed to `everglow246/AI_FOR_WIFI_2`.
-3. For the next implementation task, create `feature/codex-<short-task-name>` from `main`.
-4. Implement controlled_v1 generator changes for fixed geometry, full back-and-forth trajectory phase, and stride-separated seed metadata.
+1. New account Codex should read `ai_handoff/ACCOUNT_SWITCH_HANDOFF.md`.
+2. Create `feature/codex-source-whitelist` to review local untracked source code for future GitHub publication.
+3. Do not stage generated data or reports; use explicit whitelists only.
+4. Implement controlled_v1 generator changes for fixed geometry, full back-and-forth trajectory phase, and stride-separated seed metadata only after source publication is clean.
 5. Rerun all 18 controlled_v1 shards only after the generator patch is in place.
 6. Validate controlled_v1 for scenario geometry, no S7 leakage, fixed-CSD formal gates, seed uniqueness, candidate/transition boundary, and no-time state leakage.
 7. Recompute or confirm `reward_final` with calibration constants from the controlled_v1 calibration split.
@@ -32,4 +32,4 @@ Proceed past smoke only when:
 
 ## GitHub Publishing Step
 
-GitHub connector access is available as `everglow246`. Target repository `everglow246/AI_FOR_WIFI_2` exists and is suitable for the first handoff publish. Configure `origin` as `https://github.com/everglow246/AI_FOR_WIFI_2.git`, rename the first local branch to `main`, and push only after the handoff validator and staged-file whitelist checks pass.
+GitHub connector access is available as `everglow246`. The first safe handoff publish has already been pushed to `everglow246/AI_FOR_WIFI_2` on `main`. The next GitHub publishing step should be a separate `feature/codex-source-whitelist` review for local source/docs/tests, using explicit staging only and running the handoff validator before push.
