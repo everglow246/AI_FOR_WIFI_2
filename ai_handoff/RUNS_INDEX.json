@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-17T21:06:03+08:00",
+  "project": "AI_FOR_WIFI_2 / Action3P",
+  "latest_completed_run_id": "run_001_coverage_v0_action3p_reward_fullstep",
+  "runs": [
+    {
+      "run_id": "run_001_coverage_v0_action3p_reward_fullstep",
+      "path": "reports/runs/run_001_coverage_v0_action3p_reward_fullstep/",
+      "created_at": "2026-05-15T21:07:35+08:00",
+      "dataset_label": "action3p_coverage_v0",
+      "matlab_rerun_for_original_run": true,
+      "report_cleanup_matlab_rerun": false,
+      "report_cleanup_cql_retrain": false,
+      "reward_recompute_performed_during_cleanup": false,
+      "scenario_set": ["S1", "S2", "S3", "S4", "S5", "S6"],
+      "speed_levels_mps": [0.4, 0.6, 0.8],
+      "action_count": 432,
+      "packets_per_action": 20,
+      "candidate_mode": "full_per_step",
+      "selection_policy": "stratified_random_legal",
+      "candidate_rows": 77760,
+      "transition_count": 180,
+      "reward_formula": "reward_final = G_norm * (1 - PER) - 0.1 * T_norm",
+      "reward_status": "PHY/link diagnostic reward; not a real full-MAC reward",
+      "cql_status": "loader/loss/interface smoke only; not formal performance evidence",
+      "valid_for": [
+        "historical_calibration_asset",
+        "reward_candidate_diagnostic_asset",
+        "logged_behavior_vs_reward_best_candidate_upper_bound_diagnostic",
+        "regression_asset",
+        "CQL_loader_smoke_historical_interface_asset"
+      ],
+      "not_valid_for": [
+        "controlled_v1_speed_only_causal_conclusion",
+        "final_all_scenario_best_action_record",
+        "formal_CQL_performance_proof",
+        "offline_RL_effectiveness_proof",
+        "strict_controlled_geometry_comparison",
+        "full_plus_minus_3m_back_and_forth_validation"
+      ],
+      "github_upload_status": "not_uploaded_by_current_reports_gitignore",
+      "notes": [
+        "Current .gitignore ignores reports/* by default.",
+        "Handoff files summarize the run so GitHub readers do not need large generated artifacts."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# MATLAB / local runtime artifacts
+*.asv
+*.mat
+*.fig
+*.slxc
+*.mex*
+*.log
+
+# Generated data artifacts and report outputs.
+# Keep only consolidated/current Markdown audits by default.
+data/
+reports/*
+raw_steps.jsonl
+*.npz
+*.pt
+*.pth
+*.ckpt
+*_candidates.jsonl
+*_episodes.jsonl
+merged_candidates.jsonl
+merged_episodes.jsonl
+!reports/
+!reports/action3p_current_issue_audit.md
+!reports/action3p_v4_architecture_audit.md
+!reports/action3p_csd_capability_audit.md
+!reports/action3p_cleanup_deleted_files_20260513.md
+
+# Local downloaded bundles
+*.zip
+
+# Training/checkpoint output directories
+checkpoints/
+checkpoint*/
+runs/checkpoints/
+
+# GitHub handoff must stay lightweight. Record large artifacts in
+# ai_handoff/ARTIFACT_MANIFEST.json instead of copying raw data here.
+ai_handoff/**/*.jsonl
+ai_handoff/**/*.npz
+ai_handoff/**/*.pt
+ai_handoff/**/*.pth
+ai_handoff/**/*.mat
+ai_handoff/**/*.zip
+ai_handoff/**/raw_steps.jsonl

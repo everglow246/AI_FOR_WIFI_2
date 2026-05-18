@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-17T23:49:36+08:00",
+  "project": "AI_FOR_WIFI_2 / Action3P",
+  "github_note": "Current .gitignore ignores reports/* by default. These paths are local/generated unless explicitly unignored later. Run scripts/validate_ai_handoff.py before publishing.",
+  "latest_run": "run_001_coverage_v0_action3p_reward_fullstep",
+  "reports": [
+    {
+      "path": "reports/runs/run_001_coverage_v0_action3p_reward_fullstep/run_manifest.json",
+      "type": "run_manifest",
+      "purpose": "Canonical current run metadata and validity boundary.",
+      "status": "exists_local",
+      "github_upload_status": "not_uploaded_by_current_reports_gitignore",
+      "key_facts": {
+        "candidate_rows": 77760,
+        "transition_count": 180,
+        "matlab_rerun_for_original_run": true,
+        "report_cleanup_matlab_rerun": false,
+        "formal_cql_performance_proof": false
+      }
+    },
+    {
+      "path": "reports/runs/run_001_coverage_v0_action3p_reward_fullstep/metadata.json",
+      "type": "run_metadata",
+      "purpose": "Cleanup-era dataset label, reuse boundary, and policy diagnostic summary.",
+      "status": "exists_local",
+      "github_upload_status": "not_uploaded_by_current_reports_gitignore",
+      "key_facts": {
+        "lifecycle_status": "historical_calibration_reward_candidate_regression_asset",
+        "reward_recompute_performed": false,
+        "old_cql_smoke_missing_replay_artifacts": true
+      }
+    },
+    {
+      "path": "reports/runs/run_001_coverage_v0_action3p_reward_fullstep/coverage_v0_global_validator_post_reward.md",
+      "type": "validator_report",
+      "purpose": "Post-reward integrity, geometry, fixed-CSD, reward-source, and candidate-boundary audit.",
+      "status": "exists_local",
+      "github_upload_status": "not_uploaded_by_current_reports_gitignore",
+      "key_facts": {
+        "status": "warning",
+        "candidate_count": 77760,
+        "transition_count": 180,
+        "formal_cql_admissible": true,
+        "coverage_v0_speed_controlled": false,
+        "warnings_present": true
+      }
+    },
+    {
+      "path": "reports/runs/run_001_coverage_v0_action3p_reward_fullstep/coverage_v0_transition_dataset_report.md",
+      "type": "dataset_report",
+      "purpose": "Transition dataset interface and state-leakage audit.",
+      "status": "exists_local",
+      "github_upload_status": "not_uploaded_by_current_reports_gitignore",
+      "key_facts": {
+        "status": "passed",
+        "transition_count": 180,
+        "state_feature_count": 23,
+        "action_space_size": 432,
+        "invalid_action_count": 0,
+        "formal_observable_state_profile": true,
+        "synthetic_next_state_used": false
+      }
+    },
+    {
+      "path": "reports/runs/run_001_coverage_v0_action3p_reward_fullstep/coverage_v0_cql_loader_smoke_report.md",
+      "type": "cql_smoke_report",
+      "purpose": "CQL loader/loss/interface smoke only.",
+      "status": "exists_local",
+      "github_upload_status": "not_uploaded_by_current_reports_gitignore",
+      "key_facts": {
+        "status": "passed",
+        "transition_count": 180,
+        "q_output_dim": 432,
+        "invalid_dataset_action_rate": 0,
+        "cql_invalid_action_rate": 0,
+        "formal_performance_claim": false
+      }
+    },
+    {
+      "path": "reports/runs/run_001_coverage_v0_action3p_reward_fullstep/coverage_v0_policy_diagnostic_smoke_report.md",
+      "type": "policy_diagnostic_smoke",
+      "purpose": "Logged behavior and reward-best candidate diagnostic; explains missing CQL replay metrics.",
+      "status": "exists_local",
+      "github_upload_status": "not_uploaded_by_current_reports_gitignore",
+      "key_facts": {
+        "no_matlab_rerun": true,
+        "no_formal_cql_training": true,
+        "cql_selected_candidate_replay_status": "unavailable_no_checkpoint_or_selected_action_ids",
+        "reward_best_candidate_is_not_cql": true
+      }
+    },
+    {
+      "path": "reports/runs/run_001_coverage_v0_action3p_reward_fullstep/coverage_v0_reward_calibration_report.md",
+      "type": "reward_calibration_report",
+      "purpose": "Calibration-derived reward normalization constants.",
+      "status": "exists_local",
+      "github_upload_status": "not_uploaded_by_current_reports_gitignore",
+      "key_facts": {
+        "status": "passed",
+        "calibration_candidate_count": 51840,
+        "G_ref_source": "train_candidate_goodput_mbps_p95_np_percentile_method_linear",
+        "T_ref_source": "train_candidate_actual_tx_time_us_p95_np_percentile_method_linear"
+      }
+    },
+    {
+      "path": "reports/decisions/controlled_v1_plan.md",
+      "type": "decision_document",
+      "purpose": "Controlled_v1 geometry, seed, candidate/transition, legal mask, and reward plan.",
+      "status": "exists_local",
+      "github_upload_status": "not_uploaded_by_current_reports_gitignore",
+      "key_facts": {
+        "matlab_rerun_required_for_controlled_v1": true,
+        "coverage_v0_kept_as_diagnostic_asset": true
+      }
+    },
+    {
+      "path": "reports/decisions/report_cleanup_summary_20260517.md",
+      "type": "cleanup_summary",
+      "purpose": "Documents report reorganization and explicitly states no MATLAB rerun/CQL retrain/reward recompute.",
+      "status": "exists_local",
+      "github_upload_status": "not_uploaded_by_current_reports_gitignore",
+      "key_facts": {
+        "cleanup_deleted_files": false,
+        "matlab_rerun": false,
+        "cql_retrain": false,
+        "reward_recompute": false
+      }
+    }
+  ]
+}

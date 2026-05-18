@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-17T23:49:36+08:00",
+  "project": "AI_FOR_WIFI_2 / Action3P",
+  "scope": "Large, generated, or GitHub-unsuitable artifacts that should be referenced rather than uploaded.",
+  "github_policy": "Do not upload raw JSONL data, NPZ datasets, model checkpoints, MATLAB binary outputs, downloaded zips, or raw_steps.jsonl. Keep them in local storage and record hashes here. Run scripts/validate_ai_handoff.py before publishing.",
+  "artifacts": [
+    {
+      "path": "reports/runs/run_001_coverage_v0_action3p_reward_fullstep/coverage_v0_candidates_reward_final.jsonl",
+      "type": "postprocessed_candidate_jsonl",
+      "sha256": "a2817516217be1735f9e8812461a08045e430fccdba3fe2f9103d4795fdf4432",
+      "bytes": 643572290,
+      "sample_count": 77760,
+      "sample_unit": "candidate_rows",
+      "generated_time": "2026-05-17T14:03:34+08:00",
+      "uploaded": false,
+      "why_not_uploaded": "Large generated JSONL; current .gitignore excludes reports/* and handoff should not contain raw candidate data.",
+      "reuse_boundary": "historical reward/candidate diagnostic and regression asset only; not formal CQL performance evidence"
+    },
+    {
+      "path": "reports/runs/run_001_coverage_v0_action3p_reward_fullstep/coverage_v0_episodes_reward_final.jsonl",
+      "type": "postprocessed_episode_jsonl",
+      "sha256": "08d1912bb436fcb38822cbd83986bbfc4506356a49c2a6a57ed2dc0f7c44d714",
+      "bytes": 2667849,
+      "sample_count": 180,
+      "sample_unit": "transition_rows",
+      "generated_time": "2026-05-17T14:03:34+08:00",
+      "uploaded": false,
+      "why_not_uploaded": "Generated JSONL; record hash and row count instead of uploading raw transition rows.",
+      "reuse_boundary": "logged behavior transition diagnostics and dataset build source"
+    },
+    {
+      "path": "reports/runs/run_001_coverage_v0_action3p_reward_fullstep/coverage_v0_transition_dataset.npz",
+      "type": "transition_dataset_npz",
+      "sha256": "94688f0d3bc1b57980a3d2d8f1fcb9ae8a4d7703fb1525890710f253687d5a1d",
+      "bytes": 27502,
+      "sample_count": 180,
+      "sample_unit": "transitions",
+      "generated_time": "2026-05-17T14:04:30+08:00",
+      "uploaded": false,
+      "why_not_uploaded": "Generated NPZ dataset; GitHub handoff records metadata and hash only.",
+      "shape_summary": {
+        "state_features_pre_action": [180, 23],
+        "next_state_features": [180, 23],
+        "action_id": [180],
+        "reward_final": [180],
+        "legal_action_mask": [180, 432],
+        "next_legal_action_mask": [180, 432]
+      },
+      "reuse_boundary": "CQL loader/interface smoke historical asset; not formal CQL performance proof"
+    },
+    {
+      "path": "reports/runs/run_001_coverage_v0_action3p_reward_fullstep/merged_candidates.jsonl",
+      "type": "merged_raw_candidate_jsonl",
+      "sha256": "fcc42ba1d35f1ca3b8c2d8ad30267d71123f8ae529c769190f96465a9515b247",
+      "bytes": 620797734,
+      "sample_count": 77760,
+      "sample_unit": "candidate_rows",
+      "generated_time": "2026-05-17T11:53:43+08:00",
+      "uploaded": false,
+      "why_not_uploaded": "Large generated raw/merged JSONL; use postprocessed and indexed summaries for GitHub review.",
+      "reuse_boundary": "raw merged coverage_v0 candidate side channel; candidates are not formal transitions"
+    },
+    {
+      "path": "reports/runs/run_001_coverage_v0_action3p_reward_fullstep/merged_episodes.jsonl",
+      "type": "merged_raw_episode_jsonl",
+      "sha256": "33f0ad6f73c26a8b1f932dce568031516830d1cedccbd685f6537f223350d8dc",
+      "bytes": 2640706,
+      "sample_count": 180,
+      "sample_unit": "episode_transition_rows",
+      "generated_time": "2026-05-17T11:53:43+08:00",
+      "uploaded": false,
+      "why_not_uploaded": "Generated raw/merged JSONL; not needed in GitHub handoff.",
+      "reuse_boundary": "raw merged logged behavior episodes"
+    },
+    {
+      "path": "reports/runs/run_001_coverage_v0_action3p_reward_fullstep/merged_results.json",
+      "type": "merged_results_json",
+      "sha256": "6d530cbb2fb70e90c2bae5ed372ed78aa512677017ecfc5eb50c4e4a985f7568",
+      "bytes": 4493948,
+      "sample_count": 180,
+      "sample_unit": "records",
+      "generated_time": "2026-05-17T11:53:43+08:00",
+      "uploaded": false,
+      "why_not_uploaded": "Generated run result JSON under ignored reports/*; handoff summarizes current status instead.",
+      "additional_counts": {
+        "scenario_summaries": 6,
+        "sweep_summaries": 180
+      },
+      "reuse_boundary": "run result summary for diagnostics, not a formal performance claim"
+    },
+    {
+      "path": "data/processed/action3p_medium_v2_night_cql_smoke_model.pt",
+      "type": "legacy_cql_smoke_checkpoint",
+      "sha256": "35781344a7bf682a8506c716fa2e1d14e195ed7a697642693277a4da44bb35b6",
+      "bytes": 99681,
+      "sample_count": null,
+      "sample_unit": "not_row_based_checkpoint",
+      "generated_time": "2026-05-12T06:24:40+08:00",
+      "uploaded": false,
+      "why_not_uploaded": "Model checkpoint is generated/legacy smoke output under ignored data/ and is not suitable for GitHub source handoff.",
+      "reuse_boundary": "legacy smoke artifact only; not current formal CQL result"
+    }
+  ],
+  "other_ignored_artifact_classes": [
+    {
+      "path_glob": "data/**",
+      "upload_status": "not_uploaded_by_gitignore",
+      "reason": "Generated datasets, processed NPZ files, and legacy checkpoints."
+    },
+    {
+      "path_glob": "reports/**/*.jsonl",
+      "upload_status": "not_uploaded_by_gitignore",
+      "reason": "Generated candidate/episode rows can be large and are summarized by reports and this manifest."
+    },
+    {
+      "path_glob": "reports/**/*.npz",
+      "upload_status": "not_uploaded_by_gitignore",
+      "reason": "Generated transition datasets should be regenerated or fetched locally, not stored in GitHub source."
+    }
+  ]
+}
